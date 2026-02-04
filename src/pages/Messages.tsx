@@ -2,7 +2,7 @@ import { useSeoMeta } from '@unhead/react';
 import { Link } from 'react-router-dom';
 import { DMMessagingInterface } from '@/components/dm/DMMessagingInterface';
 import { LoginArea } from '@/components/auth/LoginArea';
-import { MessageSquare, Home } from 'lucide-react';
+import { MessageSquare, Home, Settings } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Messages = () => {
@@ -26,6 +26,12 @@ const Messages = () => {
                 <Link to="/">
                   <Home className="h-4 w-4 mr-2" />
                   Home
+                </Link>
+              </Button>
+              <Button variant="ghost" size="sm" asChild className="hidden md:flex">
+                <Link to="/settings">
+                  <Settings className="h-4 w-4 mr-2" />
+                  Settings
                 </Link>
               </Button>
             </div>
