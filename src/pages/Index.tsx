@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { LoginArea } from '@/components/auth/LoginArea';
-import { MessageSquare, Lock, Zap, Shield, Users, Globe, ArrowRight, Sparkles } from 'lucide-react';
+import { MessageSquare, Lock, Zap, Shield, Users, Globe, ArrowRight, Sparkles, Settings } from 'lucide-react';
 
 const Index = () => {
   useSeoMeta({
@@ -57,6 +57,11 @@ const Index = () => {
             <div className="flex items-center gap-4">
               <Button variant="ghost" asChild className="hidden sm:inline-flex">
                 <Link to="/messages">Open App</Link>
+              </Button>
+              <Button variant="ghost" size="icon" asChild>
+                <Link to="/settings" aria-label="Settings">
+                  <Settings className="h-5 w-5" />
+                </Link>
               </Button>
               <LoginArea className="max-w-60" />
             </div>
