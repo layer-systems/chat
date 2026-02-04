@@ -53,7 +53,7 @@ export function App() {
             <NostrProvider>
               <NostrSync />
               <NWCProvider>
-                <DMProvider>
+                <DMProvider config={{ enabled: true }}>
                   <TooltipProvider>
                     <Toaster />
                     <Suspense>
