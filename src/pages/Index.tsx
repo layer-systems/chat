@@ -59,7 +59,7 @@ const Index = () => {
                 <Link to="/messages">Open App</Link>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <Link to="/settings">
+                <Link to="/settings" aria-label="Settings">
                   <Settings className="h-5 w-5" />
                 </Link>
               </Button>
