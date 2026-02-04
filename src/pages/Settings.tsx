@@ -94,8 +94,7 @@ const Settings = () => {
                   {themeOptions.map((option) => (
                     <div
                       key={option.value}
-                      className="flex items-center space-x-3 space-y-0 border rounded-lg p-4 hover:bg-muted/50 transition-colors cursor-pointer"
-                      onClick={() => setTheme(option.value)}
+                      className="flex items-center space-x-3 space-y-0 border rounded-lg p-4 hover:bg-muted/50 transition-colors"
                     >
                       <RadioGroupItem value={option.value} id={option.value} />
                       <Label
